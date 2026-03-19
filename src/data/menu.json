@@ -1,0 +1,429 @@
+{
+  "restaurant": {
+    "name": "Restaurante D'Charly",
+    "tagline": "Mexican Taste & Tradition",
+    "phone": "626-453-4954",
+    "deliveryLabel": "Servicio a Domicilio",
+    "currency": "MXN",
+    "currencySymbol": "$"
+  },
+  "categories": [
+    {
+      "id": "promociones",
+      "name": "Promociones",
+      "emoji": "🔥",
+      "description": "Todos los días de 5:00 PM a 7:00 PM",
+      "items": [
+        {
+          "name": "Torta de Jamón",
+          "description": "Torta de jamón en promoción",
+          "price": 65,
+          "featured": true
+        },
+        {
+          "name": "Torta de Pierna",
+          "description": "Torta de pierna en promoción",
+          "price": 65,
+          "featured": true
+        },
+        {
+          "name": "Hamburguesa Sencilla",
+          "description": "Hamburguesa sencilla en promoción",
+          "price": 65,
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "desayunos",
+      "name": "Desayunos",
+      "emoji": "🍳",
+      "description": "Para comenzar bien el día",
+      "items": [
+        {
+          "name": "Huevos Rancheros",
+          "description": "Huevos estrellados sobre tortilla con salsa ranchera, frijoles y chilaquiles",
+          "price": 90
+        },
+        {
+          "name": "Huevos a la Mexicana",
+          "description": "Huevos revueltos con jitomate, cebolla y chile",
+          "price": 85
+        },
+        {
+          "name": "Huevos con Jamón",
+          "description": "Huevos al gusto acompañados de jamón",
+          "price": 85
+        },
+        {
+          "name": "Huevos con Chorizo",
+          "description": "Huevos revueltos con chorizo",
+          "price": 90
+        },
+        {
+          "name": "Huevos con Machaca",
+          "description": "Huevos revueltos con machaca de res",
+          "price": 100
+        },
+        {
+          "name": "Chilaquiles Rojos o Verdes",
+          "description": "Totopos bañados en salsa roja o verde con crema, queso y cebolla. Con huevo o pollo",
+          "price": 90
+        },
+        {
+          "name": "Enfrijoladas",
+          "description": "Tortillas bañadas en frijol con crema y queso, acompañadas de huevo",
+          "price": 85
+        },
+        {
+          "name": "Hot Cakes",
+          "description": "Torre de hot cakes con mantequilla y miel",
+          "price": 70
+        },
+        {
+          "name": "Burrito de Desayuno",
+          "description": "Tortilla de harina rellena de huevo, frijoles, queso y salsa",
+          "price": 75
+        },
+        {
+          "name": "Molletes",
+          "description": "Pan con frijoles y queso gratinado, con pico de gallo",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "entradas",
+      "name": "Entradas",
+      "emoji": "🧀",
+      "description": "Para compartir y abrir el apetito",
+      "items": [
+        {
+          "name": "Nachos con Queso",
+          "description": "Totopos con queso amarillo fundido",
+          "price": 80
+        },
+        {
+          "name": "Nachos con Carne",
+          "description": "Totopos con queso y carne al gusto",
+          "price": 120
+        },
+        {
+          "name": "Papas Francesas",
+          "description": "Papas fritas crujientes",
+          "price": 55
+        },
+        {
+          "name": "Papas con Queso",
+          "description": "Papas fritas bañadas en queso fundido",
+          "price": 75
+        },
+        {
+          "name": "Banana Charly",
+          "description": "Plátano frito relleno de queso y jamón, bañado en crema",
+          "price": 90,
+          "tags": ["Especial de la casa"]
+        },
+        {
+          "name": "Elote en Vaso",
+          "description": "Granos de elote con mayonesa, queso, chile y limón",
+          "price": 45
+        },
+        {
+          "name": "Guacamole con Totopos",
+          "description": "Guacamole fresco con totopos de maíz",
+          "price": 85
+        }
+      ]
+    },
+    {
+      "id": "tortas",
+      "name": "Tortas",
+      "emoji": "🥖",
+      "description": "Tortas con pan recién horneado",
+      "items": [
+        {
+          "name": "Torta Charly",
+          "description": "Torta especial de la casa con ingredientes seleccionados",
+          "price": 110,
+          "featured": true,
+          "tags": ["Especial de la casa"]
+        },
+        {
+          "name": "Torta de Jamón",
+          "description": "Torta con jamón, lechuga, tomate y aguacate",
+          "price": 75
+        },
+        {
+          "name": "Torta de Pierna",
+          "description": "Torta con pierna de cerdo adobada",
+          "price": 80
+        },
+        {
+          "name": "Torta de Milanesa",
+          "description": "Torta con milanesa de res empanizada",
+          "price": 85
+        },
+        {
+          "name": "Torta de Bistec",
+          "description": "Torta con bistec de res asado",
+          "price": 90
+        },
+        {
+          "name": "Torta Cubana",
+          "description": "Torta con jamón, pierna, milanesa, queso, salchicha y huevo",
+          "price": 110
+        },
+        {
+          "name": "Torta de Chorizo",
+          "description": "Torta con chorizo frito",
+          "price": 80
+        }
+      ]
+    },
+    {
+      "id": "comida-del-dia",
+      "name": "Comida del Día",
+      "emoji": "🍲",
+      "description": "Comida corrida — pregunta por el menú del día",
+      "items": [
+        {
+          "name": "Comida Corrida",
+          "description": "Sopa del día, arroz, guisado del día, postre y agua fresca",
+          "price": 85,
+          "featured": true
+        }
+      ]
+    },
+    {
+      "id": "platillos",
+      "name": "Platillos",
+      "emoji": "🥩",
+      "description": "Cortes y platillos principales",
+      "items": [
+        {
+          "name": "T-Bone",
+          "description": "Corte T-Bone a la parrilla acompañado de guarnición",
+          "price": 280,
+          "featured": true
+        },
+        {
+          "name": "Arrachera",
+          "description": "Arrachera de res a la parrilla con cebollitas y guarnición",
+          "price": 220,
+          "featured": true
+        },
+        {
+          "name": "Fajitas de Res",
+          "description": "Fajitas de res con pimientos y cebolla, tortillas y guarnición",
+          "price": 180
+        },
+        {
+          "name": "Fajitas de Pollo",
+          "description": "Fajitas de pollo con pimientos y cebolla, tortillas y guarnición",
+          "price": 160
+        },
+        {
+          "name": "Pollo a la Plancha",
+          "description": "Pechuga de pollo a la plancha con ensalada y guarnición",
+          "price": 140
+        },
+        {
+          "name": "Costillas BBQ",
+          "description": "Costillas de cerdo bañadas en salsa BBQ con papas fritas",
+          "price": 200
+        },
+        {
+          "name": "Milanesa de Res",
+          "description": "Milanesa empanizada con arroz, ensalada y frijoles",
+          "price": 140
+        },
+        {
+          "name": "Pollo en Mole",
+          "description": "Pieza de pollo bañada en mole poblano con arroz y tortillas",
+          "price": 130
+        },
+        {
+          "name": "Chuleta de Cerdo",
+          "description": "Chuleta de cerdo a la parrilla con guarnición",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "paquetes",
+      "name": "Paquetes",
+      "emoji": "🎉",
+      "description": "Parrilladas y combos para compartir",
+      "items": [
+        {
+          "name": "Parrillada para 2",
+          "description": "Arrachera, pollo, chorizo, cebollitas, nopales, tortillas y guarnición",
+          "price": 450,
+          "featured": true
+        },
+        {
+          "name": "Parrillada para 4",
+          "description": "Arrachera, T-bone, pollo, chorizo, costillas, cebollitas, nopales y guarnición",
+          "price": 850,
+          "featured": true
+        },
+        {
+          "name": "Paquete de Alitas (12 pzas)",
+          "description": "12 alitas de pollo con salsa BBQ o búfalo, papas fritas",
+          "price": 180
+        },
+        {
+          "name": "Paquete de Alitas (24 pzas)",
+          "description": "24 alitas de pollo con salsa al gusto y papas fritas",
+          "price": 320
+        }
+      ]
+    },
+    {
+      "id": "mariscos",
+      "name": "Mariscos",
+      "emoji": "🦐",
+      "description": "Frescos del mar a tu mesa",
+      "items": [
+        {
+          "name": "Pescado Frito Entero",
+          "description": "Pescado entero frito acompañado de arroz, ensalada y tortillas",
+          "price": 180
+        },
+        {
+          "name": "Filete de Pescado Empanizado",
+          "description": "Filete de pescado empanizado con papas fritas y ensalada",
+          "price": 160
+        },
+        {
+          "name": "Filete de Pescado a la Plancha",
+          "description": "Filete a la plancha con verduras y guarnición",
+          "price": 160
+        },
+        {
+          "name": "Camarones a la Diabla",
+          "description": "Camarones en salsa de chile de árbol con arroz",
+          "price": 200
+        },
+        {
+          "name": "Camarones al Mojo de Ajo",
+          "description": "Camarones salteados en mantequilla con ajo y guarnición",
+          "price": 200
+        },
+        {
+          "name": "Cóctel de Camarón",
+          "description": "Camarones cocidos en salsa de cóctel con aguacate y galletas",
+          "price": 150
+        },
+        {
+          "name": "Tostadas de Ceviche",
+          "description": "Tostadas con ceviche de pescado fresco (3 pzas)",
+          "price": 100
+        },
+        {
+          "name": "Aguachile",
+          "description": "Camarones en jugo de limón con chile, pepino, cebolla y aguacate",
+          "price": 180
+        },
+        {
+          "name": "Camarones Empanizados",
+          "description": "Camarones empanizados con papas fritas y ensalada",
+          "price": 190
+        }
+      ]
+    },
+    {
+      "id": "tacos",
+      "name": "Tacos",
+      "emoji": "🌮",
+      "description": "Tacos con tortilla de maíz o harina",
+      "items": [
+        {
+          "name": "Tacos Charly (3 pzas)",
+          "description": "Tacos especiales de la casa con ingredientes selectos",
+          "price": 100,
+          "featured": true,
+          "tags": ["Especial de la casa"]
+        },
+        {
+          "name": "Tacos de Bistec (3 pzas)",
+          "description": "Tacos de bistec de res con cebolla, cilantro y salsa",
+          "price": 85
+        },
+        {
+          "name": "Tacos de Pastor (3 pzas)",
+          "description": "Tacos al pastor con piña, cebolla y cilantro",
+          "price": 75
+        },
+        {
+          "name": "Tacos de Pollo (3 pzas)",
+          "description": "Tacos de pollo asado con guacamole",
+          "price": 75
+        },
+        {
+          "name": "Tacos de Chorizo (3 pzas)",
+          "description": "Tacos de chorizo con cebolla y cilantro",
+          "price": 70
+        },
+        {
+          "name": "Quesatacos (3 pzas)",
+          "description": "Tacos con queso fundido y carne al gusto",
+          "price": 90
+        },
+        {
+          "name": "Tacos Dorados (4 pzas)",
+          "description": "Tacos dorados de pollo o papa con crema, lechuga y queso",
+          "price": 80
+        },
+        {
+          "name": "Tacos de Arrachera (3 pzas)",
+          "description": "Tacos de arrachera con guacamole y cebollitas",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "id": "hamburguesas",
+      "name": "Hamburguesas",
+      "emoji": "🍔",
+      "description": "Con pan artesanal y papas fritas",
+      "items": [
+        {
+          "name": "Hamburguesa Clásica",
+          "description": "Carne de res, lechuga, tomate, cebolla y mayonesa con papas",
+          "price": 85
+        },
+        {
+          "name": "Hamburguesa Especial",
+          "description": "Carne de res con queso amarillo, tocino, lechuga, tomate y papas",
+          "price": 110
+        },
+        {
+          "name": "Hamburguesa Charly",
+          "description": "Hamburguesa especial de la casa con ingredientes premium",
+          "price": 130,
+          "featured": true,
+          "tags": ["Especial de la casa"]
+        },
+        {
+          "name": "Hamburguesa Angus",
+          "description": "Carne Angus premium con queso, tocino, cebolla caramelizada y papas",
+          "price": 160,
+          "featured": true
+        },
+        {
+          "name": "Hamburguesa Texas",
+          "description": "Doble carne, doble queso, tocino, aros de cebolla, salsa BBQ y papas",
+          "price": 170,
+          "featured": true
+        },
+        {
+          "name": "Hamburguesa de Pollo",
+          "description": "Pechuga de pollo empanizada con lechuga, tomate y mayonesa",
+          "price": 95
+        }
+      ]
+    }
+  ]
+}
