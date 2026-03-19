@@ -15,7 +15,11 @@
       "mcp__browsermcp__browser_navigate",
       "mcp__filesystem__list_directory",
       "mcp__filesystem__read_text_file",
-      "Bash(node -e \":*)"
+      "Bash(node -e \":*)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)",
+      "Bash(gh workflow:*)",
+      "Bash(gh run:*)"
     ]
   }
 }
