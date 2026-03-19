@@ -5,7 +5,7 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const outputDir = join(__dirname, '..', 'public', 'qr');
-const menuUrl = 'https://cdcalderon.github.io/charly-menu/';
+const menuUrl = 'https://dcharlymenu.github.io/';
 
 if (!existsSync(outputDir)) {
   mkdirSync(outputDir, { recursive: true });
