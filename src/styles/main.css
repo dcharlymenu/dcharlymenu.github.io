@@ -157,6 +157,11 @@ body::before {
   letter-spacing: 0.03em;
 }
 
+/* ── Category thumbnail ── */
+.category-thumb {
+  border: 2px solid rgba(217, 119, 6, 0.25);
+}
+
 /* ── Category section divider ── */
 .category-divider {
   height: 3px;

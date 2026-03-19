@@ -4,20 +4,20 @@
  */
 
 const CATEGORY_STYLES = {
-  desayunos: { gradient: 'linear-gradient(135deg, #fcd34d, #f59e0b)', emoji: '🍳' },
-  entradas: { gradient: 'linear-gradient(135deg, #fbbf24, #d97706)', emoji: '🧀' },
-  ensaladas: { gradient: 'linear-gradient(135deg, #4ade80, #16a34a)', emoji: '🥗' },
-  tortas: { gradient: 'linear-gradient(135deg, #fb923c, #ea580c)', emoji: '🥖' },
-  hamburguesas: { gradient: 'linear-gradient(135deg, #f97316, #dc2626)', emoji: '🍔' },
-  'algo-mas': { gradient: 'linear-gradient(135deg, #c084fc, #9333ea)', emoji: '🫔' },
-  'comida-del-dia': { gradient: 'linear-gradient(135deg, #a3e635, #16a34a)', emoji: '🍲' },
-  platillos: { gradient: 'linear-gradient(135deg, #f43f5e, #be123c)', emoji: '🥩' },
-  mariscos: { gradient: 'linear-gradient(135deg, #22d3ee, #0284c7)', emoji: '🦐' },
-  burritos: { gradient: 'linear-gradient(135deg, #fb923c, #b45309)', emoji: '🌯' },
-  menudo: { gradient: 'linear-gradient(135deg, #ef4444, #991b1b)', emoji: '🍜' },
-  postres: { gradient: 'linear-gradient(135deg, #f9a8d4, #ec4899)', emoji: '🍰' },
-  'bebidas-sin-alcohol': { gradient: 'linear-gradient(135deg, #67e8f9, #06b6d4)', emoji: '🥤' },
-  'bebidas-con-alcohol': { gradient: 'linear-gradient(135deg, #fcd34d, #d97706)', emoji: '🍺' },
+  desayunos: { gradient: 'linear-gradient(135deg, #fcd34d, #f59e0b)', emoji: '🍳', image: '/images/categories/desayunos.webp' },
+  entradas: { gradient: 'linear-gradient(135deg, #fbbf24, #d97706)', emoji: '🧀', image: '/images/categories/entradas.webp' },
+  ensaladas: { gradient: 'linear-gradient(135deg, #4ade80, #16a34a)', emoji: '🥗', image: '/images/categories/ensaladas.webp' },
+  tortas: { gradient: 'linear-gradient(135deg, #fb923c, #ea580c)', emoji: '🥖', image: '/images/categories/tortas.webp' },
+  hamburguesas: { gradient: 'linear-gradient(135deg, #f97316, #dc2626)', emoji: '🍔', image: '/images/categories/hamburguesas.webp' },
+  'algo-mas': { gradient: 'linear-gradient(135deg, #c084fc, #9333ea)', emoji: '🫔', image: '/images/categories/algo-mas.webp' },
+  'comida-del-dia': { gradient: 'linear-gradient(135deg, #a3e635, #16a34a)', emoji: '🍲', image: '/images/categories/comida-del-dia.webp' },
+  platillos: { gradient: 'linear-gradient(135deg, #f43f5e, #be123c)', emoji: '🍖', image: '/images/categories/platillos.webp' },
+  mariscos: { gradient: 'linear-gradient(135deg, #22d3ee, #0284c7)', emoji: '🦐', image: '/images/categories/mariscos.webp' },
+  burritos: { gradient: 'linear-gradient(135deg, #fb923c, #b45309)', emoji: '🌯', image: '/images/categories/burritos.webp' },
+  menudo: { gradient: 'linear-gradient(135deg, #ef4444, #991b1b)', emoji: '🍲', image: '/images/categories/menudo.webp' },
+  postres: { gradient: 'linear-gradient(135deg, #f9a8d4, #ec4899)', emoji: '🍰', image: '/images/categories/postres.webp' },
+  'bebidas-sin-alcohol': { gradient: 'linear-gradient(135deg, #67e8f9, #06b6d4)', emoji: '🥤', image: '/images/categories/bebidas-sin-alcohol.webp' },
+  'bebidas-con-alcohol': { gradient: 'linear-gradient(135deg, #fcd34d, #d97706)', emoji: '🍺', image: '/images/categories/bebidas-con-alcohol.webp' },
 };
 
 function createItemCard(item, categoryId) {
@@ -65,11 +65,19 @@ function createCategorySection(category) {
 
   const style = CATEGORY_STYLES[category.id] || { emoji: '🍽️' };
 
+  const thumbHtml = style.image
+    ? `<div class="category-thumb shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-2xl overflow-hidden shadow-md"
+           style="background: ${style.gradient};">
+        <img src="${style.image}" alt="${category.name}"
+             class="w-full h-full object-cover" loading="lazy" />
+      </div>`
+    : `<span class="text-4xl" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">${category.emoji}</span>`;
+
   const header = document.createElement('div');
   header.className = 'section-header mb-7';
   header.innerHTML = `
-    <div class="flex items-center gap-3 mb-2">
-      <span class="text-4xl" style="filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));">${category.emoji}</span>
+    <div class="flex items-center gap-4 mb-2">
+      ${thumbHtml}
       <div>
         <h2 class="font-heading text-2xl md:text-3xl font-extrabold text-charcoal">${category.name}</h2>
         ${category.description ? `<p class="text-charcoal-light text-sm mt-0.5">${category.description}</p>` : ''}

@@ -385,7 +385,7 @@
     {
       "id": "platillos",
       "name": "Platillos",
-      "emoji": "🥩",
+      "emoji": "🍖",
       "description": "Cortes y platillos principales",
       "items": [
         {
@@ -612,7 +612,7 @@
     {
       "id": "menudo",
       "name": "Menudo",
-      "emoji": "🍜",
+      "emoji": "🍲",
       "description": "Disponible sábado y domingo",
       "items": [
         {
