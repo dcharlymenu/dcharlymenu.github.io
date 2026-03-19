@@ -19,10 +19,6 @@
 }
 
 /* ── Base ── */
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: var(--font-body);
   background-color: var(--color-cream);
@@ -41,6 +37,13 @@ body::before {
   background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d97706' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   pointer-events: none;
   z-index: -1;
+}
+
+/* ── Hero background image ── */
+.hero-bg {
+  background-image: url('/images/hero.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 /* ── Hero decorative border ── */
@@ -83,24 +86,15 @@ body::before {
 
 /* ── Card styles ── */
 .menu-card {
-  opacity: 0;
-  transform: translateY(24px);
+  will-change: transform;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.menu-card.visible {
-  animation: card-enter 0.5s ease-out forwards;
-}
-
 .menu-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-4px) !important;
   box-shadow:
     0 20px 40px -12px rgba(0, 0, 0, 0.12),
     0 8px 20px -8px rgba(217, 119, 6, 0.1);
-}
-
-.menu-card.visible:hover {
-  transform: translateY(-4px);
 }
 
 /* ── Featured card ── */
@@ -182,41 +176,12 @@ body::before {
   50% { background-position: 100% 50%; }
 }
 
-/* ── Keyframes ── */
-@keyframes card-enter {
-  from {
-    opacity: 0;
-    transform: translateY(24px) scale(0.97);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(3deg); }
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* ── Keyframes (kept for non-GSAP elements) ── */
 
 /* ── Floating hero emojis ── */
 .hero-emoji {
-  animation: float 4s ease-in-out infinite;
+  will-change: transform;
 }
-.hero-emoji:nth-child(2) { animation-delay: 0.5s; }
-.hero-emoji:nth-child(3) { animation-delay: 1s; }
-.hero-emoji:nth-child(4) { animation-delay: 1.5s; }
 
 /* ── Line clamp ── */
 .line-clamp-2 {
@@ -234,7 +199,13 @@ body::before {
   animation: promo-shimmer 6s ease-in-out infinite;
 }
 
-/* ── Smooth section fade in ── */
-.section-header {
-  animation: fade-up 0.6s ease-out forwards;
+/* ── Reduced motion fallback ── */
+@media (prefers-reduced-motion: reduce) {
+  .menu-card,
+  .hero-emoji,
+  .section-header,
+  footer {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }

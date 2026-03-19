@@ -1,8 +1,8 @@
 /**
- * Sticky category navigation with scroll spy and smooth scrolling.
+ * Sticky category navigation with scroll spy and smooth scrolling via Lenis.
  */
 
-export function initNavigation(categories) {
+export function initNavigation(categories, lenis) {
   const nav = document.querySelector('#category-nav .nav-scroll');
   if (!nav) return;
 
@@ -17,7 +17,11 @@ export function initNavigation(categories) {
     pill.addEventListener('click', () => {
       const section = document.getElementById(`category-${cat.id}`);
       if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (lenis) {
+          lenis.scrollTo(section, { offset: -80 });
+        } else {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       }
     });
 

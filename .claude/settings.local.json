@@ -12,7 +12,10 @@
       "Bash(npm install:*)",
       "Bash(npm run:*)",
       "Bash(timeout 5 npx vite --host)",
-      "mcp__browsermcp__browser_navigate"
+      "mcp__browsermcp__browser_navigate",
+      "mcp__filesystem__list_directory",
+      "mcp__filesystem__read_text_file",
+      "Bash(node -e \":*)"
     ]
   }
 }

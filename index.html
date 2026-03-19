@@ -25,11 +25,9 @@
 <body class="min-h-screen">
 
   <!-- Hero -->
-  <header class="relative overflow-hidden">
-    <!-- Background -->
-    <div class="absolute inset-0 bg-gradient-to-br from-charcoal via-charcoal-light to-charcoal"></div>
-    <!-- Pattern overlay -->
-    <div class="absolute inset-0 opacity-5" style="background-image: url(&quot;data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h4v2h-2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h2v2h-2v2h2v2.5H20z' fill='%23fbbf24' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E&quot;);"></div>
+  <header class="hero-bg relative overflow-hidden">
+    <!-- Dark overlay for text readability -->
+    <div class="absolute inset-0 bg-black/55"></div>
     <!-- Floating emojis -->
     <div class="absolute inset-0 pointer-events-none">
       <div class="hero-emoji absolute top-6 left-[8%] text-5xl md:text-6xl opacity-20">🌶️</div>
@@ -43,13 +41,13 @@
         <div class="mb-3">
           <span class="inline-block text-5xl md:text-6xl mb-2">🍽️</span>
         </div>
-        <h1 class="font-heading text-4xl md:text-6xl font-black tracking-tight text-white leading-tight">
+        <h1 class="hero-title font-heading text-4xl md:text-6xl font-black tracking-tight text-white leading-tight">
           Restaurante<br>
           <span class="text-primary-light drop-shadow-lg" style="text-shadow: 0 0 40px rgba(251, 191, 36, 0.3);">D'Charly</span>
         </h1>
-        <p class="text-lg md:text-2xl font-heading italic mt-3 text-amber-200/90 tracking-wide">Mexican Taste &amp; Tradition</p>
+        <p class="hero-tagline text-lg md:text-2xl font-heading italic mt-3 text-amber-200/90 tracking-wide">Mexican Taste &amp; Tradition</p>
 
-        <div class="mt-8 inline-flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/10 shadow-lg">
+        <div class="hero-phone mt-8 inline-flex items-center gap-3 bg-white/10 backdrop-blur-md rounded-full px-6 py-3 border border-white/10 shadow-lg">
           <span class="text-xl">📞</span>
           <div class="text-left">
             <div class="text-xs text-amber-200/70 uppercase tracking-wider font-semibold">Servicio a Domicilio</div>

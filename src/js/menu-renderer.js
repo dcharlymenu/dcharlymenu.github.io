@@ -4,16 +4,20 @@
  */
 
 const CATEGORY_STYLES = {
-  promociones: { gradient: 'linear-gradient(135deg, #f87171, #f97316)', emoji: '🔥' },
   desayunos: { gradient: 'linear-gradient(135deg, #fcd34d, #f59e0b)', emoji: '🍳' },
   entradas: { gradient: 'linear-gradient(135deg, #fbbf24, #d97706)', emoji: '🧀' },
+  ensaladas: { gradient: 'linear-gradient(135deg, #4ade80, #16a34a)', emoji: '🥗' },
   tortas: { gradient: 'linear-gradient(135deg, #fb923c, #ea580c)', emoji: '🥖' },
-  'comida-del-dia': { gradient: 'linear-gradient(135deg, #4ade80, #16a34a)', emoji: '🍲' },
-  platillos: { gradient: 'linear-gradient(135deg, #f43f5e, #be123c)', emoji: '🥩' },
-  paquetes: { gradient: 'linear-gradient(135deg, #c084fc, #9333ea)', emoji: '🎉' },
-  mariscos: { gradient: 'linear-gradient(135deg, #22d3ee, #0284c7)', emoji: '🦐' },
-  tacos: { gradient: 'linear-gradient(135deg, #a3e635, #16a34a)', emoji: '🌮' },
   hamburguesas: { gradient: 'linear-gradient(135deg, #f97316, #dc2626)', emoji: '🍔' },
+  'algo-mas': { gradient: 'linear-gradient(135deg, #c084fc, #9333ea)', emoji: '🫔' },
+  'comida-del-dia': { gradient: 'linear-gradient(135deg, #a3e635, #16a34a)', emoji: '🍲' },
+  platillos: { gradient: 'linear-gradient(135deg, #f43f5e, #be123c)', emoji: '🥩' },
+  mariscos: { gradient: 'linear-gradient(135deg, #22d3ee, #0284c7)', emoji: '🦐' },
+  burritos: { gradient: 'linear-gradient(135deg, #fb923c, #b45309)', emoji: '🌯' },
+  menudo: { gradient: 'linear-gradient(135deg, #ef4444, #991b1b)', emoji: '🍜' },
+  postres: { gradient: 'linear-gradient(135deg, #f9a8d4, #ec4899)', emoji: '🍰' },
+  'bebidas-sin-alcohol': { gradient: 'linear-gradient(135deg, #67e8f9, #06b6d4)', emoji: '🥤' },
+  'bebidas-con-alcohol': { gradient: 'linear-gradient(135deg, #fcd34d, #d97706)', emoji: '🍺' },
 };
 
 function createItemCard(item, categoryId) {
@@ -44,7 +48,7 @@ function createItemCard(item, categoryId) {
     <div class="p-4 md:p-5">
       <div class="flex justify-between items-start gap-3 mb-2">
         <h4 class="font-heading font-bold text-charcoal text-base md:text-lg leading-snug">${item.name}</h4>
-        <span class="price-badge">$${item.price}</span>
+        ${item.price ? `<span class="price-badge">$${item.price}</span>` : ''}
       </div>
       ${item.description ? `<p class="text-charcoal-light text-sm line-clamp-2 leading-relaxed">${item.description}</p>` : ''}
       ${tags ? `<div class="flex flex-wrap gap-1.5 mt-3">${tags}</div>` : ''}
