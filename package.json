@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "generate-qr": "node scripts/generate-qr.js",
-    "download-category-images": "node scripts/download-category-images.js"
+    "download-category-images": "node scripts/download-category-images.js",
+    "process-menu-image": "node scripts/process-menu-images.js"
   },
   "author": "cdcalderon",
   "license": "ISC",

@@ -10,6 +10,7 @@ const CATEGORY_STYLES = {
   tortas: { gradient: 'linear-gradient(135deg, #fb923c, #ea580c)', emoji: '🥖', image: '/images/categories/tortas.webp' },
   hamburguesas: { gradient: 'linear-gradient(135deg, #f97316, #dc2626)', emoji: '🍔', image: '/images/categories/hamburguesas.webp' },
   'algo-mas': { gradient: 'linear-gradient(135deg, #c084fc, #9333ea)', emoji: '🫔', image: '/images/categories/algo-mas.webp' },
+  tacos: { gradient: 'linear-gradient(135deg, #f59e0b, #dc2626)', emoji: '🌮', image: '/images/categories/tacos.webp' },
   'comida-del-dia': { gradient: 'linear-gradient(135deg, #a3e635, #16a34a)', emoji: '🍲', image: '/images/categories/comida-del-dia.webp' },
   platillos: { gradient: 'linear-gradient(135deg, #f43f5e, #be123c)', emoji: '🍖', image: '/images/categories/platillos.webp' },
   mariscos: { gradient: 'linear-gradient(135deg, #22d3ee, #0284c7)', emoji: '🦐', image: '/images/categories/mariscos.webp' },

@@ -123,6 +123,12 @@
           "price": 0
         },
         {
+          "name": "Pizza",
+          "description": "",
+          "price": 0,
+          "image": "/images/menu/entradas/pizza.webp"
+        },
+        {
           "name": "Papas Charly",
           "description": "Bañadas con queso amarillo o estofado",
           "price": 0,
@@ -286,7 +292,8 @@
         {
           "name": "Papas con Queso",
           "description": "",
-          "price": 0
+          "price": 0,
+          "image": "/images/menu/hamburguesas/papas-con-queso.webp"
         }
       ]
     },
@@ -314,7 +321,8 @@
         {
           "name": "Quesadilla de Harina",
           "description": "",
-          "price": 0
+          "price": 0,
+          "image": "/images/menu/algo-mas/quesadilla-de-harina.webp"
         },
         {
           "name": "Quesadilla de Maíz",
@@ -334,6 +342,20 @@
       ]
     },
     {
+      "id": "tacos",
+      "name": "Tacos",
+      "emoji": "🌮",
+      "description": "",
+      "items": [
+        {
+          "name": "Tacos al Pastor",
+          "description": "",
+          "price": 0,
+          "image": "/images/menu/tacos/tacos-al-pastor.webp"
+        }
+      ]
+    },
+    {
       "id": "comida-del-dia",
       "name": "Comida del Día",
       "emoji": "🍲",
@@ -348,7 +370,8 @@
         {
           "name": "Caldo de Res",
           "description": "",
-          "price": 0
+          "price": 0,
+          "image": "/images/menu/comida-del-dia/caldo-de-res.webp"
         },
         {
           "name": "Caldo de Pollo",
@@ -368,7 +391,8 @@
         {
           "name": "Enchiladas",
           "description": "Con frijoles, arroz y ensalada",
-          "price": 0
+          "price": 0,
+          "image": "/images/menu/comida-del-dia/enchiladas.webp"
         },
         {
           "name": "Orden de Frijoles o Arroz",
@@ -401,7 +425,8 @@
         {
           "name": "Platillo de Alambre",
           "description": "Arroz, ensalada, quesadilla y papa",
-          "price": 0
+          "price": 0,
+          "image": "/images/menu/platillos/platillo-de-alambre.webp"
         },
         {
           "name": "Platillo Norteño",
@@ -416,14 +441,16 @@
         {
           "name": "Pollo con Enchiladas",
           "description": "Arroz, frijoles y ensalada",
-          "price": 0
+          "price": 0,
+          "image": "/images/menu/platillos/pollo-con-enchiladas.webp"
         },
         {
           "name": "Huarache Charly",
           "description": "T-bone o costilla, huarache, con salsa, frijoles, quesadilla y papa",
           "price": 0,
           "featured": true,
-          "tags": ["Especial de la casa"]
+          "tags": ["Especial de la casa"],
+          "image": "/images/menu/platillos/huarache-charly.webp"
         },
         {
           "name": "Costillas",
@@ -440,7 +467,8 @@
           "name": "Fajitas Mar y Tierra",
           "description": "Res, pollo, camarones, acompañado de arroz, frijoles, papa y quesadilla",
           "price": 0,
-          "featured": true
+          "featured": true,
+          "image": "/images/menu/platillos/fajitas-mar-y-tierra.webp"
         },
         {
           "name": "Fajitas",
@@ -452,7 +480,8 @@
           "description": "T-bone, enchiladas, quesadilla, arroz, papa y ensalada",
           "price": 0,
           "featured": true,
-          "tags": ["Especial de la casa"]
+          "tags": ["Especial de la casa"],
+          "image": "/images/menu/platillos/platillo-charly.webp"
         },
         {
           "name": "Parrillada",
